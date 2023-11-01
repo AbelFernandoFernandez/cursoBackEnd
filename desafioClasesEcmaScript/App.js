@@ -1,6 +1,5 @@
 // * Creando clase con ES avanzado
 
-
 class ProductManager {
   constructor() {
     this.products = [];
@@ -12,7 +11,7 @@ class ProductManager {
     }
 
     const product = {
-      id: this.#generateId(),
+      id: this.generateId(),
       title,
       description,
       price,
@@ -29,7 +28,7 @@ class ProductManager {
         }
   }
 
-  #generateId() {
+  generateId() {
     const id =
       this.products.length === 0
         ? 1
@@ -101,3 +100,4 @@ console.log(productManager.getProductsById(2));
 // Se llamará el método “getProducts” nuevamente, esta vez debe aparecer el producto recién agregado
 // Se llamará al método “addProduct” con los mismos campos de arriba, debe arrojar un error porque el código estará repetido.
 // Se evaluará que getProductById devuelva error si no encuentra el producto o el producto en caso de encontrarlo
+
