@@ -1,5 +1,4 @@
 // *  Creando clase con ES avanzado
-
 class ProductManager {
   constructor() {
     this.products = [];
@@ -11,7 +10,7 @@ class ProductManager {
     }
 
     const product = {
-      id: this.generateId(),
+      id: this.#generateId(),
       title,
       description,
       price,
@@ -28,7 +27,7 @@ class ProductManager {
         }
   }
 
-  generateId() {
+  #generateId() {
     const id =
       this.products.length === 0
         ? 1
@@ -79,11 +78,6 @@ productManager.addProduct(
 
 console.log(productManager.getProductsById(1));
 console.log(productManager.getProductsById(2));
-
-
-
-
-
 
 // ! PROCESO TESTING ENTREGABLE
 
