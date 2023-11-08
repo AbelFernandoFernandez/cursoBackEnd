@@ -5,7 +5,7 @@ class ProductManager {
   }
 
   addProduct(title, description, price, thumbnail, code, stock) {
-    if(!title || !description || !price || !thumbnail || !code || !stock) {
+    if (!title || !description || !price || !thumbnail || !code || !stock) {
       return console.log(`Es obligatorio completar todos los campos`);
     }
 
@@ -20,11 +20,11 @@ class ProductManager {
     }
 
     const productExists = this.products.find((p) => p.code === product.code);
-        if (productExists) {
-          return console.log("¡¡ERROR codigo repetido!!");
-        } else {
-          this.products.push(product);
-        }
+    if (productExists) {
+      return console.log("¡¡ERROR codigo repetido!!");
+    } else {
+      this.products.push(product);
+    }
   }
 
   #generateId() {
