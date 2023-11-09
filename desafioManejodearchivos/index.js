@@ -18,7 +18,6 @@ class ProductManager {
 
   async addProduct(product) {
     await this.getProducts();
-
     const productId = this.generateUniqueId();
     const newProduct = { id: productId, ...product };
     this.products.push(newProduct);
@@ -45,7 +44,7 @@ class ProductManager {
       ...this.products[productIndex],
       ...updatedFields,
     };
-    await fs.promises.writeFile(this.productsFile, JSON.stringify(this.products));
+    await fs.promises.writeFile(this.productsFile, JSON.stringify(this.products, null, 2));
     return this.products[productIndex];
   }
 
@@ -56,7 +55,7 @@ class ProductManager {
     if (this.products.length === initialLength) {
       throw new Error('Producto no encontrado');
     }
-    await fs.promises.writeFile(this.productsFile, JSON.stringify(this.products));
+    await fs.promises.writeFile(this.productsFile, JSON.stringify(this.products, null, 2));
   }
 
   generateUniqueId() {
