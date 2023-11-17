@@ -1,6 +1,6 @@
 [
   {
-    "id": "_qxpqtx3ek",
+    "id": 1,
     "title": "producto prueba",
     "description": "Este es un producto prueba",
     "price": 250,
@@ -9,7 +9,7 @@
     "stock": 25
   },
   {
-    "id": "_52wdnhlds",
+    "id": 2,
     "title": "producto prueba",
     "description": "Este es un producto prueba",
     "price": 200,
@@ -18,7 +18,7 @@
     "stock": 25
   },
   {
-    "id": "_cqyz7xf01",
+    "id": 3,
     "title": "producto prueba",
     "description": "Este es un producto prueba",
     "price": 200,
@@ -27,7 +27,7 @@
     "stock": 25
   },
   {
-    "id": "_2cvlu736a",
+    "id": 4,
     "title": "producto prueba",
     "description": "Este es un producto prueba",
     "price": 200,
@@ -36,7 +36,7 @@
     "stock": 25
   },
   {
-    "id": "_rorcicrry",
+    "id": 5,
     "title": "producto prueba",
     "description": "Este es un producto prueba",
     "price": 200,
@@ -45,7 +45,7 @@
     "stock": 25
   },
   {
-    "id": "_h050zzb77",
+    "id": 6,
     "title": "producto prueba",
     "description": "Este es un producto prueba",
     "price": 200,
@@ -54,7 +54,7 @@
     "stock": 25
   },
   {
-    "id": "_pog3i05ux",
+    "id": 7,
     "title": "producto prueba",
     "description": "Este es un producto prueba",
     "price": 200,
@@ -63,7 +63,7 @@
     "stock": 25
   },
   {
-    "id": "_tbl7yzw1n",
+    "id": 8,
     "title": "producto prueba",
     "description": "Este es un producto prueba",
     "price": 200,
@@ -72,7 +72,7 @@
     "stock": 25
   },
   {
-    "id": "_e3spib607",
+    "id": 9,
     "title": "producto prueba",
     "description": "Este es un producto prueba",
     "price": 200,
@@ -81,7 +81,7 @@
     "stock": 25
   },
   {
-    "id": "_yuag67f9w",
+    "id": 10,
     "title": "producto prueba",
     "description": "Este es un producto prueba",
     "price": 200,
@@ -90,7 +90,43 @@
     "stock": 25
   },
   {
-    "id": "_okwq9ryzl",
+    "id": 11,
+    "title": "producto prueba",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/baseaff-8d2a8.appspot.com/o/buda.jpg?alt=media&token=c97c7757-9dcd-426b-bf40-a185835502e2",
+    "code": "abc123",
+    "stock": 25
+  },
+  {
+    "id": 12,
+    "title": "producto prueba",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/baseaff-8d2a8.appspot.com/o/buda.jpg?alt=media&token=c97c7757-9dcd-426b-bf40-a185835502e2",
+    "code": "abc123",
+    "stock": 25
+  },
+  {
+    "id": 13,
+    "title": "producto prueba",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/baseaff-8d2a8.appspot.com/o/buda.jpg?alt=media&token=c97c7757-9dcd-426b-bf40-a185835502e2",
+    "code": "abc123",
+    "stock": 25
+  },
+  {
+    "id": 14,
+    "title": "producto prueba",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/baseaff-8d2a8.appspot.com/o/buda.jpg?alt=media&token=c97c7757-9dcd-426b-bf40-a185835502e2",
+    "code": "abc123",
+    "stock": 25
+  },
+  {
+    "id": 15,
     "title": "producto prueba",
     "description": "Este es un producto prueba",
     "price": 200,
