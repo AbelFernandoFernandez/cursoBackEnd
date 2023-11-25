@@ -1,0 +1,26 @@
+[
+    {
+        "id": "53079b6c-899a-4677-8a1e-9b102342add3",
+        "title": "prod 1",
+        "description": "esta es una descripción rara",
+        "price": 5500,
+        "code": 1,
+        "stock": 100
+    },
+    {
+        "id": "63cddeda-6139-45c6-904f-722cd14c2936",
+        "title": "prod 2",
+        "description": "esta es una descripción",
+        "price": 1500,
+        "code": 1,
+        "stock": 150
+    },
+    {
+        "id": "d0de4352-dc06-4caf-ad3c-8f393fff40ca",
+        "title": "prod 4",
+        "description": "esta es una descripción",
+        "price": 1500,
+        "code": 1,
+        "stock": 150
+    }
+]
