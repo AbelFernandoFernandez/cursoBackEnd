@@ -1,12 +1,12 @@
 import { Router } from "express";
-import { productManager } from "../server.js";
+import  ProductManager  from "../managers/productManager";
 
 const productRouter = Router();
 
 productRouter.get('/', async (req, res) => {
     try {
         const { limit } = req.query;
-        const products = await productManager.getProducts()
+        const products = await ProductManager.getProducts()
         if (limit) {
             const limitedProduct = products.slice(0, limit)
             return res.json(limitedProduct)
@@ -22,20 +22,25 @@ productRouter.get('/', async (req, res) => {
 productRouter.get('/:pid', async (req, res) => {
     const { pid } = req.params;
     try {
-        const products = await productManager.getProductById(pid)
+        const products = await ProductManager.getProductById(pid)
+        if (!products){
+            return res.send('Producto no encontrado')
+        }
         res.json(products)
     } catch (error) {
         console.log(error);
+        return res.send({error: error.message})
     }
 });
 
 productRouter.post('/', async (req, res) => {
     try {
         const { title, description, price, thumbnail, code, stock } = req.body;
-        const response = await productManager.addProduct({ title, description, price, thumbnail, code, stock })
+        const response = await ProductManager.addProduct({ title, description, price, thumbnail, code, stock })
         res.json(response)
     } catch (error) {
         console.log(error);
+        return res.send({error:error.message})
     }
 });
 
@@ -43,7 +48,7 @@ productRouter.put('/:pid', async (req, res) => {
     const { pid } = req.params;
     try {
         const { title, description, price, thumbnail, code, stock } = req.body;
-        const response = await productManager.updateProduct(pid, { title, description, price, thumbnail, code, stock })
+        const response = await ProductManager.updateProduct(pid, { title, description, price, thumbnail, code, stock })
         res.json(response)
     } catch (error) {
         console.log(error);
@@ -53,7 +58,7 @@ productRouter.put('/:pid', async (req, res) => {
 productRouter.delete('/:pid', async (req, res) => {
     const { pid } = req.params;
     try {
-        await productManager.deleteProduct(pid)
+        await ProductManager.deleteProduct(pid)
     } catch (error) {
         console.log(error);
     }

@@ -1,9 +1,9 @@
 import { promises as fs } from "fs";
 import { v4 as uuidv4 } from 'uuid'
 
-export class ProductManager {
+class ProductManager {
     constructor() {
-        this.path = 'products.json'
+        this.path = './src/data/products.json'
         this.products = []
     }
 
@@ -56,7 +56,7 @@ export class ProductManager {
         }
     }
 }
-
+export default ProductManager;
 
 
 
