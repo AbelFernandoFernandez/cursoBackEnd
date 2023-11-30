@@ -1,5 +1,5 @@
 import { Router } from "express";
-import  {productManager}  from "../server.js";
+import { productManager } from "../server.js";
 
 const productRouter = Router();
 
@@ -11,6 +11,7 @@ productRouter.get('/', async (req, res) => {
             const limitedProduct = products.slice(0, limit)
             return res.json(limitedProduct)
         }
+
         return res.json(products)
 
     } catch (error) {
@@ -22,13 +23,9 @@ productRouter.get('/:pid', async (req, res) => {
     const { pid } = req.params;
     try {
         const products = await productManager.getProductById(pid)
-        if (!products){
-            return res.send('Producto no encontrado')
-        }
         res.json(products)
     } catch (error) {
         console.log(error);
-        return res.send({error: error.message})
     }
 });
 
@@ -39,7 +36,6 @@ productRouter.post('/', async (req, res) => {
         res.json(response)
     } catch (error) {
         console.log(error);
-        return res.send({error:error.message})
     }
 });
 
