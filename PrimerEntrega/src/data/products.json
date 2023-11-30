@@ -1,9 +1,11 @@
-[
+{
+    "products": [
     {
         "id": "53079b6c-899a-4677-8a1e-9b102342add3",
         "title": "prod 1",
         "description": "esta es una descripción rara",
         "price": 5500,
+        "thumbnail": "Sin imagen",
         "code": 1,
         "stock": 100
     },
@@ -12,6 +14,7 @@
         "title": "prod 2",
         "description": "esta es una descripción",
         "price": 1500,
+        "thumbnail": "Sin imagen",
         "code": 1,
         "stock": 150
     },
@@ -20,7 +23,24 @@
         "title": "prod 4",
         "description": "esta es una descripción",
         "price": 1500,
+        "thumbnail": "Sin imagen",
         "code": 1,
         "stock": 150
+    },
+    {
+        "id": "bdc3a16a-4052-402e-8f64-db23ffda8f2d",
+        "title": "AAA",
+        "description": "lñsarjg}{jnsdf{knbj",
+        "thumbnail": "Sin imagen",
+        "price": 333,
+        "stock": 333
+    },
+    {
+        "id": "32fe6c87-9985-4f4d-a06e-0fa1afc83b58",
+        "title": "mmm",
+        "description": "sarrgbafvasfg",
+        "thumbnail": "Sin imagen",
+        "price": 444,
+        "stock": 444
     }
-]
+]}

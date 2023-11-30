@@ -6,8 +6,7 @@ socket.on('dataUpdated', (data) => {
         productsHTML += `<div class="product">
         <h2>${product.title}</h2>
         <p>Price: ${product.price}</p>
-        <p>Description:
-          ${product.description}</p>
+        <p>Description: ${product.description}</p>
         <p>ID: ${product.id}</p>
       </div>`
     })
@@ -84,4 +83,3 @@ delProdForm.addEventListener('submit', (e) => {
 
     delProdForm.reset();
 });
-
